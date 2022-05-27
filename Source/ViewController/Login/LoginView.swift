@@ -8,72 +8,23 @@
 import UIKit
 
 class LoginView: UIView {
-	// MARK: - Visual Elements
+	// MARK: - LabelDefault
+	let titleLabel = LabelDefault(text: "Login", font: UIFont.systemFont(ofSize: 25))
+	let emailLabel = LabelDefault(text: "Email")
+	let passwordLabel = LabelDefault(text: "Senha")
+
+	// MARK: - TextFieldDefault
+	let emailTextField = TextFieldDefault(placeholder: "Informe seu email", keyboardType: .emailAddress)
+	let passwordTextField = TextFieldDefault(placeholder: "Informe seu senha", isSecureTextEntry: true)
 	
-	let titleLabel: UILabel = {
-		let lb = UILabel()
-		lb.translatesAutoresizingMaskIntoConstraints = false
-		lb.text = "Login"
-		lb.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
-		
-		return lb
-	}()
-	
-	let emailLabel: UILabel = {
-		let lb = UILabel()
-		lb.text = "Email"
-		lb.translatesAutoresizingMaskIntoConstraints = false
-		
-		return lb
-	}()
-	
-	let emailTextField: UITextField = {
-		let tf = UITextField()
-		tf.translatesAutoresizingMaskIntoConstraints = false
-		tf.layer.borderColor = UIColor.black.cgColor
-		tf.layer.borderWidth = 1
-		tf.backgroundColor = .lightGray
-		tf.placeholder = "Informe seu email"
-		
-		return tf
-	}()
-	
-	let passwordLabel: UILabel = {
-		let lb = UILabel()
-		lb.translatesAutoresizingMaskIntoConstraints = false
-		lb.text = "Senha"
-		
-		return lb
-	}()
-	
-	let passwordTextField: UITextField = {
-		let tf = UITextField()
-		tf.translatesAutoresizingMaskIntoConstraints = false
-		tf.layer.borderColor = UIColor.black.cgColor
-		tf.layer.borderWidth = 1
-		tf.backgroundColor = .lightGray
-		tf.placeholder = "Informe seu senha"
-		
-		return tf
-	}()
-	
-	let loginButton: UIButton = {
-		let bt = UIButton()
-		bt.translatesAutoresizingMaskIntoConstraints = false
-		bt.setTitle("Entrar", for: .normal)
-		bt.backgroundColor = .blue
-		bt.layer.cornerRadius = 15
-		
-		return bt
-	}()
+	// MARK: - ButtonDefault
+	let loginButton = ButtonDefault(title: "Entrar")
+	let registerButton = ButtonDefault(title: "Registrar")
 	
 	// MARK: - Inits
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		
 		setVisualElements()
-		
-		
 	}
 	
 	required init?(coder: NSCoder) {
@@ -85,6 +36,7 @@ class LoginView: UIView {
 		setEmail()
 		setPassword()
 		setLoginButton()
+		setRegisterButton()
 	}
 	
 	private func setTitle() {
@@ -137,6 +89,17 @@ class LoginView: UIView {
 			loginButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 24),
 			loginButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -24),
 			loginButton.heightAnchor.constraint(equalToConstant: 40),
+		])
+	}
+	
+	private func setRegisterButton() {
+		self.addSubview(registerButton)
+		
+		NSLayoutConstraint.activate([
+			registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 30),
+			registerButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 24),
+			registerButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -24),
+			registerButton.heightAnchor.constraint(equalToConstant: 40),
 		])
 	}
 }
