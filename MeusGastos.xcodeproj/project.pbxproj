@@ -12,6 +12,9 @@
 		C5015352283C4EE40098A27B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5015351283C4EE40098A27B /* LoginViewController.swift */; };
 		C5015354283C52E90098A27B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5015353283C52E90098A27B /* LoginView.swift */; };
 		C54FB1EA284111B90085720C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB1E9284111B90085720C /* ViewControllerDefault.swift */; };
+		C54FB1EC28414E160085720C /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB1EB28414E160085720C /* RegisterCoordinator.swift */; };
+		C54FB1EF28414EB90085720C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB1EE28414EB80085720C /* RegisterViewController.swift */; };
+		C54FB1F128414EF20085720C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FB1F028414EF20085720C /* RegisterView.swift */; };
 		C556CD48283DAF49007D4DCD /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556CD47283DAF49007D4DCD /* LabelDefault.swift */; };
 		C556CD4A283DBA61007D4DCD /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556CD49283DBA61007D4DCD /* TextFieldDefault.swift */; };
 		C57E9E8D283BEFF2005E2D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9E8C283BEFF2005E2D18 /* AppDelegate.swift */; };
@@ -47,6 +50,9 @@
 		C5015351283C4EE40098A27B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5015353283C52E90098A27B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C54FB1E9284111B90085720C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		C54FB1EB28414E160085720C /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		C54FB1EE28414EB80085720C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C54FB1F028414EF20085720C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		C556CD47283DAF49007D4DCD /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		C556CD49283DBA61007D4DCD /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		C57E9E89283BEFF2005E2D18 /* MeusGastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeusGastos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +109,7 @@
 			children = (
 				C501534C283C4C980098A27B /* Coordinator.swift */,
 				C501534E283C4D530098A27B /* LoginCoordinator.swift */,
+				C54FB1EB28414E160085720C /* RegisterCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C5015350283C4ED60098A27B /* Login */,
+				C54FB1ED28414EA30085720C /* Register */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -122,6 +130,15 @@
 				C5015353283C52E90098A27B /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		C54FB1ED28414EA30085720C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C54FB1EE28414EB80085720C /* RegisterViewController.swift */,
+				C54FB1F028414EF20085720C /* RegisterView.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		C556CD45283DAF14007D4DCD /* Infrastructure */ = {
@@ -325,6 +342,9 @@
 			files = (
 				C5015354283C52E90098A27B /* LoginView.swift in Sources */,
 				C5DDEAA2283FB88A0013BCD0 /* ButtonDefault.swift in Sources */,
+				C54FB1F128414EF20085720C /* RegisterView.swift in Sources */,
+				C54FB1EC28414E160085720C /* RegisterCoordinator.swift in Sources */,
+				C54FB1EF28414EB90085720C /* RegisterViewController.swift in Sources */,
 				C54FB1EA284111B90085720C /* ViewControllerDefault.swift in Sources */,
 				C501534D283C4C980098A27B /* Coordinator.swift in Sources */,
 				C501534F283C4D530098A27B /* LoginCoordinator.swift in Sources */,

@@ -8,6 +8,8 @@
 import UIKit
 
 class LoginView: UIView {
+	var onRegisterTap: (() -> Void)?
+	
 	// MARK: - LabelDefault
 	let titleLabel = LabelDefault(text: "Login", font: UIFont.systemFont(ofSize: 25))
 	let emailLabel = LabelDefault(text: "Email")
@@ -95,6 +97,8 @@ class LoginView: UIView {
 	private func setRegisterButton() {
 		self.addSubview(registerButton)
 		
+		registerButton.addTarget(self, action: #selector(registerButtonTap), for: .touchUpInside)
+		
 		NSLayoutConstraint.activate([
 			registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 30),
 			registerButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 24),
@@ -102,4 +106,10 @@ class LoginView: UIView {
 			registerButton.heightAnchor.constraint(equalToConstant: 40),
 		])
 	}
+	
+	@objc
+	func registerButtonTap() {
+		self.onRegisterTap?()
+	}
+	
 }
