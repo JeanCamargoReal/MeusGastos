@@ -8,11 +8,16 @@
 import Foundation
 
 class RegisterViewController: ViewControllerDefault {
+	//MARK: - Closures
+	var onLoginTap: (() -> Void)?
 	
 	// MARK: - VisualElements
 	lazy var registerView: RegisterView = {
 		let view = RegisterView()
-		view.backgroundColor = .red
+		view.backgroundColor = .white
+		view.onLoginTap = {
+			self.onLoginTap?()
+		}
 		
 		return view
 	}()
