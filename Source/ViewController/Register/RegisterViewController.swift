@@ -20,4 +20,14 @@ class RegisterViewController: ViewControllerDefault {
 	override func loadView() {
 		self.view = registerView
 	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(true, animated: animated)
+	}
+	
+	override func viewDidDisappear(_ animated: Bool) {
+		super.viewDidDisappear(animated)
+		navigationController?.setNavigationBarHidden(false, animated: animated)
+	}
 }
