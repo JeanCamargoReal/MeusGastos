@@ -25,6 +25,9 @@
 		C57E9EAE283BEFF5005E2D18 /* MeusGastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9EAD283BEFF5005E2D18 /* MeusGastosUITests.swift */; };
 		C57E9EB0283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */; };
 		C5DDEAA2283FB88A0013BCD0 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDEAA1283FB88A0013BCD0 /* ButtonDefault.swift */; };
+		C5E60C94284A591700E3A9B5 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E60C93284A591700E3A9B5 /* HomeCoordinator.swift */; };
+		C5E60C97284A5D3600E3A9B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E60C96284A5D3600E3A9B5 /* HomeViewController.swift */; };
+		C5E60C9A284A5D5300E3A9B5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E60C99284A5D5300E3A9B5 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		C57E9EAD283BEFF5005E2D18 /* MeusGastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITests.swift; sourceTree = "<group>"; };
 		C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C5DDEAA1283FB88A0013BCD0 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		C5E60C93284A591700E3A9B5 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		C5E60C96284A5D3600E3A9B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C5E60C99284A5D5300E3A9B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 				C501534C283C4C980098A27B /* Coordinator.swift */,
 				C501534E283C4D530098A27B /* LoginCoordinator.swift */,
 				C54FB1EB28414E160085720C /* RegisterCoordinator.swift */,
+				C5E60C93284A591700E3A9B5 /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 		C501534B283C4C7E0098A27B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C5E60C95284A5D2600E3A9B5 /* Home */,
 				C5015350283C4ED60098A27B /* Login */,
 				C54FB1ED28414EA30085720C /* Register */,
 			);
@@ -208,6 +216,15 @@
 				C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */,
 			);
 			path = MeusGastosUITests;
+			sourceTree = "<group>";
+		};
+		C5E60C95284A5D2600E3A9B5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C5E60C96284A5D3600E3A9B5 /* HomeViewController.swift */,
+				C5E60C99284A5D5300E3A9B5 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +362,15 @@
 				C54FB1F128414EF20085720C /* RegisterView.swift in Sources */,
 				C54FB1EC28414E160085720C /* RegisterCoordinator.swift in Sources */,
 				C54FB1EF28414EB90085720C /* RegisterViewController.swift in Sources */,
+				C5E60C97284A5D3600E3A9B5 /* HomeViewController.swift in Sources */,
+				C5E60C94284A591700E3A9B5 /* HomeCoordinator.swift in Sources */,
 				C54FB1EA284111B90085720C /* ViewControllerDefault.swift in Sources */,
 				C501534D283C4C980098A27B /* Coordinator.swift in Sources */,
 				C501534F283C4D530098A27B /* LoginCoordinator.swift in Sources */,
 				C57E9E8D283BEFF2005E2D18 /* AppDelegate.swift in Sources */,
 				C5015352283C4EE40098A27B /* LoginViewController.swift in Sources */,
 				C556CD48283DAF49007D4DCD /* LabelDefault.swift in Sources */,
+				C5E60C9A284A5D5300E3A9B5 /* HomeView.swift in Sources */,
 				C57E9E8F283BEFF2005E2D18 /* SceneDelegate.swift in Sources */,
 				C556CD4A283DBA61007D4DCD /* TextFieldDefault.swift in Sources */,
 			);
