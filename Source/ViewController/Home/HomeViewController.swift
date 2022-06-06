@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
 	
 	private lazy var homeView: HomeView = {
 		let view = HomeView()
-		view.backgroundColor = .red
+		view.backgroundColor = .white
 		
 		return view
 	}()
@@ -19,6 +19,12 @@ class HomeViewController: UIViewController {
 	
 	override func loadView() {
 		self.view = homeView
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		self.title = ""
 	}
 	
 }
