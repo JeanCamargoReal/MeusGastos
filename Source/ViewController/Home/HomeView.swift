@@ -23,8 +23,8 @@ class HomeView: UIView {
 		return segment
 	}()
 	
-	lazy var viewInputs: UIView = {
-		let view = UIView()
+	lazy var viewInputs: ViewInputOutput = {
+		let view = ViewInputOutput()
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.backgroundColor = .red
 		

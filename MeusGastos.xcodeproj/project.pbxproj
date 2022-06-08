@@ -24,6 +24,7 @@
 		C57E9EA4283BEFF5005E2D18 /* MeusGastosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9EA3283BEFF5005E2D18 /* MeusGastosTests.swift */; };
 		C57E9EAE283BEFF5005E2D18 /* MeusGastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9EAD283BEFF5005E2D18 /* MeusGastosUITests.swift */; };
 		C57E9EB0283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */; };
+		C59B06C72850D5240022E42E /* ViewInputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B06C62850D5240022E42E /* ViewInputOutput.swift */; };
 		C5DDEAA2283FB88A0013BCD0 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDEAA1283FB88A0013BCD0 /* ButtonDefault.swift */; };
 		C5E60C94284A591700E3A9B5 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E60C93284A591700E3A9B5 /* HomeCoordinator.swift */; };
 		C5E60C97284A5D3600E3A9B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E60C96284A5D3600E3A9B5 /* HomeViewController.swift */; };
@@ -69,6 +70,7 @@
 		C57E9EA9283BEFF5005E2D18 /* MeusGastosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeusGastosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57E9EAD283BEFF5005E2D18 /* MeusGastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITests.swift; sourceTree = "<group>"; };
 		C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C59B06C62850D5240022E42E /* ViewInputOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInputOutput.swift; sourceTree = "<group>"; };
 		C5DDEAA1283FB88A0013BCD0 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 		C5E60C93284A591700E3A9B5 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		C5E60C96284A5D3600E3A9B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				C556CD49283DBA61007D4DCD /* TextFieldDefault.swift */,
 				C5DDEAA1283FB88A0013BCD0 /* ButtonDefault.swift */,
 				C54FB1E9284111B90085720C /* ViewControllerDefault.swift */,
+				C59B06C62850D5240022E42E /* ViewInputOutput.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				C5E60C97284A5D3600E3A9B5 /* HomeViewController.swift in Sources */,
 				C5E60C94284A591700E3A9B5 /* HomeCoordinator.swift in Sources */,
 				C54FB1EA284111B90085720C /* ViewControllerDefault.swift in Sources */,
+				C59B06C72850D5240022E42E /* ViewInputOutput.swift in Sources */,
 				C501534D283C4C980098A27B /* Coordinator.swift in Sources */,
 				C501534F283C4D530098A27B /* LoginCoordinator.swift in Sources */,
 				C57E9E8D283BEFF2005E2D18 /* AppDelegate.swift in Sources */,
