@@ -8,11 +8,18 @@
 import Foundation
 import UIKit
 
+enum EntryType {
+	case Input
+	case Output
+}
+
 class ViewInputOutput: UIView {
 	
 	// MARK: - Closures
 	
 	// MARK: - Properties
+	var entryType: EntryType
+	
 	lazy var iconImageView: UIImageView = {
 		let imageView = UIImageView(image: UIImage(named: ""))
 		imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -24,8 +31,10 @@ class ViewInputOutput: UIView {
 	lazy var subTitleLabel = LabelDefault(text: "", font: UIFont.systemFont(ofSize: 14, weight: .light))
 	
 	// MARK: - Inits
-	override init(frame: CGRect) {
-		super.init(frame: frame)
+	init(entryType: EntryType) {
+		self.entryType = entryType
+		
+		super.init(frame: .zero)
 		
 		setElementsVisual()
 	}
@@ -34,10 +43,30 @@ class ViewInputOutput: UIView {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
+	// MARK: - Sets
+	
+	func setValue(value: Double) {
+		valueLabel.text = String(value)
+	}
+	
 	private func setElementsVisual() {
+		setEntryType()
 		setIcon()
 		setValue()
 		setSubTittle()
+	}
+	
+	private func setEntryType() {
+		switch self.entryType {
+			case .Input:
+				iconImageView.image = UIImage(named: "arrowUp")
+				subTitleLabel.text = "Entradas do mês"
+				self.backgroundColor = .inputsColor
+			case .Output:
+				iconImageView.image = UIImage(named: "arrowDown")
+				subTitleLabel.text = "Entradas do mês"
+				self.backgroundColor = .outputsColor
+		}
 	}
 	
 	private func setIcon() {
@@ -68,7 +97,6 @@ class ViewInputOutput: UIView {
 	private func setSubTittle() {
 		self.addSubview(subTitleLabel)
 		self.subTitleLabel.textAlignment = .center
-		self.subTitleLabel.text = "Entrada de valores"
 		self.subTitleLabel.adjustsFontSizeToFitWidth = true
 		self.subTitleLabel.minimumScaleFactor = 0.5
 		

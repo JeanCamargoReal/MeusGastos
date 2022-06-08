@@ -25,6 +25,7 @@
 		C57E9EAE283BEFF5005E2D18 /* MeusGastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9EAD283BEFF5005E2D18 /* MeusGastosUITests.swift */; };
 		C57E9EB0283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */; };
 		C59B06C72850D5240022E42E /* ViewInputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B06C62850D5240022E42E /* ViewInputOutput.swift */; };
+		C59B06CA285114E90022E42E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B06C9285114E90022E42E /* Color.swift */; };
 		C5DDEAA2283FB88A0013BCD0 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDEAA1283FB88A0013BCD0 /* ButtonDefault.swift */; };
 		C5E60C94284A591700E3A9B5 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E60C93284A591700E3A9B5 /* HomeCoordinator.swift */; };
 		C5E60C97284A5D3600E3A9B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E60C96284A5D3600E3A9B5 /* HomeViewController.swift */; };
@@ -71,6 +72,7 @@
 		C57E9EAD283BEFF5005E2D18 /* MeusGastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITests.swift; sourceTree = "<group>"; };
 		C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C59B06C62850D5240022E42E /* ViewInputOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInputOutput.swift; sourceTree = "<group>"; };
+		C59B06C9285114E90022E42E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C5DDEAA1283FB88A0013BCD0 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 		C5E60C93284A591700E3A9B5 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		C5E60C96284A5D3600E3A9B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		C556CD45283DAF14007D4DCD /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				C59B06C8285114D60022E42E /* Extensions */,
 				C556CD46283DAF30007D4DCD /* Components */,
 			);
 			path = Infrastructure;
@@ -219,6 +222,14 @@
 				C57E9EAF283BEFF5005E2D18 /* MeusGastosUITestsLaunchTests.swift */,
 			);
 			path = MeusGastosUITests;
+			sourceTree = "<group>";
+		};
+		C59B06C8285114D60022E42E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C59B06C9285114E90022E42E /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C5E60C95284A5D2600E3A9B5 /* Home */ = {
@@ -377,6 +388,7 @@
 				C5E60C9A284A5D5300E3A9B5 /* HomeView.swift in Sources */,
 				C57E9E8F283BEFF2005E2D18 /* SceneDelegate.swift in Sources */,
 				C556CD4A283DBA61007D4DCD /* TextFieldDefault.swift in Sources */,
+				C59B06CA285114E90022E42E /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

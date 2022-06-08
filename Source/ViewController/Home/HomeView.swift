@@ -24,17 +24,17 @@ class HomeView: UIView {
 	}()
 	
 	lazy var viewInputs: ViewInputOutput = {
-		let view = ViewInputOutput()
+		let view = ViewInputOutput(entryType: EntryType.Input)
 		view.translatesAutoresizingMaskIntoConstraints = false
-		view.backgroundColor = .red
+		view.layer.cornerRadius = 10
 		
 		return view
 	}()
 	
-	lazy var viewOutputs: UIView = {
-		let view = UIView()
+	lazy var viewOutputs: ViewInputOutput = {
+		let view = ViewInputOutput(entryType: EntryType.Output)
 		view.translatesAutoresizingMaskIntoConstraints = false
-		view.backgroundColor = .green
+		view.layer.cornerRadius = 10
 		
 		return view
 	}()
@@ -55,6 +55,12 @@ class HomeView: UIView {
 		setSegment()
 		setViewInputs()
 		setViewOutputs()
+		setValue()
+	}
+	
+	private func setValue() {
+		self.viewInputs.setValue(value: 2450)
+		self.viewOutputs.setValue(value: 7689)
 	}
 	
 	private func setSegment() {
@@ -88,5 +94,4 @@ class HomeView: UIView {
 			viewOutputs.heightAnchor.constraint(equalToConstant: 150),
 		])
 	}
-	
 }
